@@ -3,4 +3,4 @@
 
 // Write your JavaScript code.
 
-$(".phone").mask("+38(999)999-9999");
+$(".phone").mask("+7(999)999-9999");
