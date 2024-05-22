@@ -1,0 +1,22 @@
+﻿<div class="signup-box">
+    <h2 class="signup-zagalovok zagalovki">Регистрация</h2>
+    <form action="" method="post" class="signup-form">
+        <label for="first" class="login-label">Логин</label>
+        <input class="form-control" type="text" id="first" name="first" required>
+        <label for="email" class="email-label signup-label">Email</label>
+        <input class="form-control" type="email" id="email" name="email" required>
+        <label for="password" class="password-label signup-label">Пароль</label>
+        <input class="form-control" type="password" id="password" name="password" pattern="^(?=.*\d)(?=.*[a-zA-Z])(?=.*[^a-zA-Z0-9])\S{8,}$" title="Пароль должен содержать хотя бы одну цифру, одну букву, один символ и быть не менее 8 символов" required>
+        <label for="repassword" class="repeat-password-label signup-label">Повторите пароль</label>
+        <input class="form-control" type="password" id="repassword" name="repassword" required>
+        <label for="mobile" class="number-label signup-label">Телефон</label>
+        <input class="form-control" type="text" id="mobile" name="mobile" maxlength="10" required>
+        <label for="gender" class="gender-label signup-label">Пол</label>
+        <select class="form-control" id="gender" name="gender" required>
+            <option value="male">Мужской</option>
+            <option value="female">Женский</option>
+            <option value="other">Другой</option>
+        </select>
+        <button class ="btn btn-primary btn-signup" type="submit">Зарегистрироваться</button>
+    </form>
+</div>

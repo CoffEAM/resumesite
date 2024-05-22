@@ -1,0 +1,52 @@
+﻿<form class="row g-3" action="~/Home/Privacy/">
+    <div class="input-group">
+        <span class="input-group-text">Имя и фамилия</span>
+        <input type="text" aria-label="First name" class="form-control" name="username">
+        <input type="text" aria-label="Last name" class="form-control" name="usersurname">
+    </div>
+    <div class="form-group">
+        <label for="inputDate">Дата рождения:</label>
+        <div class="form_date">
+            <input type="date" class="form-control" name="user_birthday">
+        </div>
+    </div>
+    <div class="col-md-6">
+        <label for="inputCity" class="form-label">Город проживания</label>
+        <div class="form-city"><input type="text" class="form-control" id="inputCity"></div>
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">Ищу удаленную работу</label>
+        </div>
+    </div>
+    <div class="col-5">
+        <div class="email-text"><label for="exampleFormControlInput1">Электронная почта</label></div>
+        <div class="email-input"><input type="email" class="form-control" id="exampleFormControlInput1" placeholder="email@example.com"></div>
+    </div>
+    <div class="col-6 phone_form">
+        <p class="phone_text">Телефон</p>
+        <input type="tel" class="phone_number form-control">
+    </div>
+    <div class="col-12">
+        <label for="inputZip" class="form-label job_select_text">Должность</label>
+        <input type="text" class="form-control job_select_input" id="inputZip">
+    </div>
+    <div class="col-6 salary_form">
+        <p class="salary_text">Зарплата, ₽</p>
+        <input type="tel" class="salary_input form-control">
+    </div>
+    <div class="col-6 busy_form">
+        <p class="busy_text">Тип занятости</p>
+        <select id="inputState" class="form-control busy_input">
+            <option selected>Полная</option>
+            <option>Неполная</option>
+            <option>Сменная</option>
+            <option>Вахтовая</option>
+            <option>Временная работа</option>
+            <option>Частичная занятость / совместительно</option>
+            <option>Неполная дистанционная</option>
+        </select>
+    </div>
+    <div class="col-12">
+        <button type="submit" class="btn btn-primary">Сохранить</button>
+    </div>
+</form>
