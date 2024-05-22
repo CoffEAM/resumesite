@@ -44,11 +44,21 @@
     background-color: rgb(45, 80, 217);
 }
 
+
+
 .zagalovki {
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.usual-text-fonts {
     font-family: "Fira Sans", sans-serif;
     font-weight: 400;
     font-style: normal;
 }
+
+
 
 .gigachat_text{
     font-family: "Freeman", sans-serif;
