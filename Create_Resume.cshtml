@@ -1,42 +1,44 @@
-﻿<form class="row g-3" action="~/Home/Privacy/">
+﻿
+
+<form class="row g-3">
     <div class="input-group">
-        <span class="input-group-text">Имя и фамилия</span>
+        <span class="input-group-text usual-text-fonts">Имя и фамилия</span>
         <input type="text" aria-label="First name" class="form-control" name="username">
         <input type="text" aria-label="Last name" class="form-control" name="usersurname">
     </div>
     <div class="form-group">
-        <label for="inputDate">Дата рождения:</label>
+        <label for="inputDate" class="usual-text-fonts">Дата рождения:</label>
         <div class="form_date">
-            <input type="date" class="form-control" name="user_birthday">
+            <input type="date" class="form-control usual-text-fonts" name="user_birthday">
         </div>
     </div>
     <div class="col-md-6">
-        <label for="inputCity" class="form-label">Город проживания</label>
+        <label for="inputCity" class="form-label usual-text-fonts">Город проживания</label>
         <div class="form-city"><input type="text" class="form-control" id="inputCity"></div>
         <div class="form-check">
             <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-            <label class="form-check-label" for="flexCheckDefault">Ищу удаленную работу</label>
+            <label class="form-check-label usual-text-fonts" for="flexCheckDefault">Ищу удаленную работу</label>
         </div>
     </div>
     <div class="col-5">
-        <div class="email-text"><label for="exampleFormControlInput1">Электронная почта</label></div>
+        <div class="email-text usual-text-fonts"><label for="exampleFormControlInput1">Электронная почта</label></div>
         <div class="email-input"><input type="email" class="form-control" id="exampleFormControlInput1" placeholder="email@example.com"></div>
     </div>
     <div class="col-6 phone_form">
-        <p class="phone_text">Телефон</p>
+        <p class="phone_text usual-text-fonts">Телефон</p>
         <input type="tel" class="phone_number form-control">
     </div>
     <div class="col-12">
-        <label for="inputZip" class="form-label job_select_text">Должность</label>
-        <input type="text" class="form-control job_select_input" id="inputZip">
+        <label for="inputZip" class="form-label job_select_text usual-text-fonts">Должность</label>
+        <input type="text" class="form-control job_select_input" id="inputZip" name="user_job">
     </div>
     <div class="col-6 salary_form">
-        <p class="salary_text">Зарплата, ₽</p>
+        <p class="salary_text usual-text-fonts">Зарплата, ₽</p>
         <input type="tel" class="salary_input form-control">
     </div>
     <div class="col-6 busy_form">
-        <p class="busy_text">Тип занятости</p>
-        <select id="inputState" class="form-control busy_input">
+        <p class="busy_text usual-text-fonts">Тип занятости</p>
+        <select id="inputState" class="form-control busy_input" name="user_busy">
             <option selected>Полная</option>
             <option>Неполная</option>
             <option>Сменная</option>
@@ -46,7 +48,22 @@
             <option>Неполная дистанционная</option>
         </select>
     </div>
-    <div class="col-12">
-        <button type="submit" class="btn btn-primary">Сохранить</button>
+    <div class="col-12 description-for-promt">
+        <p class="description-text usual-text-fonts">Напишите про себя кратко(Чем увлекаетесь, какие языки изучаете, имели ли опыт работы и тд)<br />
+        <p class="em-description-text"><em>Для более корректной генерации, используйте как можно больше кратких фактов о себе.</em></p></p>
+        <textarea type="text" placeholder="Люблю программировать и изучать инностранные языки(Английский, францзуский). До этого нигде не работал." class="form-control description-input" name="short_description"></textarea>
     </div>
+    <div class="col-12 btn-generate-div">
+        <button type="submit" class="btn btn-primary btn-generate">Сгенерировать</button>
+    </div>
+    <div class="generate-answer">
+        <p class="text-generated-answer usual-text-fonts">Сгенерированное описание:</p>
+        <textarea type="text" class="generated-input form-control">@ViewBag.Message</textarea>
+    </div>
+    <div>
+        <p class="warning-text"><strong>Этот текст является лишь примером и может потребовать доработки. Важно, чтобы резюме было правдивым и соответствовало действительности.</strong></p>
+    </div>
+    @{
+        ViewBag.Message = "HandleText";
+    }
 </form>

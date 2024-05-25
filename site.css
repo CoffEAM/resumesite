@@ -42,6 +42,7 @@
     margin: 0 auto;
     display: block;
     background-color: rgb(45, 80, 217);
+    font-size: 20px;
 }
 
 
@@ -209,3 +210,116 @@
     margin-top: 10px;
 }
 
+.description-text{
+    margin-left: 10px;
+}
+
+.em-description-text {
+    display: flex;
+    margin-top: -20px;
+    margin-left: 15px;
+    font-size: 14px;
+}
+
+.description-input {
+    max-height: 110px;
+    min-height: 76px;
+    margin-left: 20px;
+    margin-top: -5px;
+    max-width: 764px;
+}
+
+
+.btn-generate {
+    margin-left: auto;
+    margin-right: 20px;
+    margin-top: -5px;
+    background-color: rgb(45, 80, 217);
+    float: right;
+}
+
+
+.generated-input{
+    min-height: 150px;
+    height: 200px;
+    max-height: 200px;
+}
+
+.text-generated-answer{
+    margin-top: -20px;
+    margin-left: 10px;
+}
+
+.generated-input{
+    max-width: 764px;
+    margin-top: -10px;
+    margin-left: 20px;
+}
+
+.warning-text{
+    margin-left: 30px;
+    margin-top: -15px;
+    font-size: 13px;
+}
+
+.footer-class {
+    background-color: rgb(48, 48, 48);
+    color: white;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.text1{
+    margin-top: 30px;
+    margin-left: 10px;
+}
+
+.zagalovok2{
+    margin-top: 50px;
+}
+
+.text2 {
+    margin-top: 30px;
+    margin-left: 10px;
+}
+
+.zagalovok3 {
+    margin-top: 50px;
+}
+
+.accordion{
+    margin-top: 30px;
+    margin-left: 15px;
+}
+
+.zagalovok4{
+    margin-top: 50px;
+}
+
+.text4{
+    margin-top: 15px;
+}
+
+.create_button_link{
+    display: block;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+.bot-send-mail{
+    margin-bottom: 176px;
+    margin-top: 20px;
+}
+
+.question-textarea {
+    resize: none;
+    height: 114px;
+}
+
+.obratnuj-zvonok {
+    vertical-align: middle;
+    margin: auto auto;
+    max-width: 500px;
+    margin-top: 200px;
+}

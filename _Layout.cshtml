@@ -13,6 +13,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500;700;800&family=Freeman&display=swap" rel="stylesheet">
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript"></script>
 </head>
 <body>
     <header class="p-3 text-white class_header">
@@ -25,7 +26,7 @@
                 <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
                     <li><a href="~/Home/Index" class="nav-link px-2 text-white">Главная</a></li>
                     <li><a href="~/Home/Create_Resume" class="nav-link px-2 text-white">Создать резюме</a></li>
-                    <li><a href="" class="nav-link px-2 text-white">Обратная связь</a></li>
+                    <li><a href="~/Home/Feedback" class="nav-link px-2 text-white">Обратная связь</a></li>
                 </ul>
                 <div class="text-end">
                     <button type="button" class="btn btn-outline-light me-2" onclick="document.location='/Home/SignIn'">Войти</button>
@@ -40,9 +41,14 @@
         </main>
     </div>
 
-@*     <footer class="footer text-muted">
-        
-    </footer> *@
+    <footer class="py-3 my-4 footer-class">
+        <ul class="nav justify-content-center border-bottom pb-3 mb-3 ul-footer">
+            <li class="nav-item"><a href="/Home/Index" class="nav-link px-2 text-white">Главная</a></li>
+            <li class="nav-item"><a href="/Home/Create_Resume" class="nav-link px-2 text-white">Создать резюме</a></li>
+            <li class="nav-item"><a href="/Home/Feedback" class="nav-link px-2 text-white">Обратная связь</a></li>
+        </ul>
+        <p class="text-center text-white">© 2024 ResumeGen, Inc</p>
+    </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
